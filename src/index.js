@@ -14,7 +14,8 @@ const convertToPdf = async (fileToConvertPath) => {
 
   await page.pdf({
     format: 'A4',
-    path: path.resolve(__dirname, '..', 'cv.pdf')
+    path: path.resolve(__dirname, '..', 'cv.pdf'),
+    printBackground: true
   });
 
   await browser.close();
