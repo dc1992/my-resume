@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const path = require('path');
 
 const convertToPdf = async (fileToConvertPath) => {
   const browser = await puppeteer.launch({
@@ -13,7 +14,7 @@ const convertToPdf = async (fileToConvertPath) => {
 
   await page.pdf({
     format: 'A4',
-    path: `${__dirname}/cv.pdf`
+    path: path.resolve(__dirname, '..', 'cv.pdf')
   });
 
   await browser.close();
