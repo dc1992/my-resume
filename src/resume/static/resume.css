@@ -151,7 +151,7 @@ header .neck {
     margin-bottom: -10px;
 }
 
-.container .aboutme {
+.container .aboutme-text {
     width: 95%;
     padding-left: 10pt;
     font-size: 10pt;
@@ -241,6 +241,22 @@ footer {
 
 .right {
     float: right;
+}
+
+.experience {
+    margin-top: 20pt;
+}
+
+.skills {
+    margin-top: 20pt;
+}
+
+.education {
+    margin-top: 20pt;
+}
+
+.aboutme {
+    margin-top: -20pt;
 }
 
 @media(max-width:800px){
